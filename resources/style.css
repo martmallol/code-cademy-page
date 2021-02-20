@@ -101,7 +101,7 @@ body {
   font-size: 26px;
   font-weight: bold;
   color: #000000;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .edit {
@@ -223,7 +223,9 @@ padding-left: 30px;
 
 }
 
-.careerpath {
+.interactive, .careerpath, .course {
+  margin-bottom: 20px;
+  padding-bottom: 60px;
   background-color: white;
 }
 
@@ -269,7 +271,7 @@ padding-left: 30px;
 
 .intro {
   background-color: rgb(226, 231, 235);
-  margin-right: 30px;
+  margin-right: 40px;
   padding: 15px;
 }
 
@@ -281,11 +283,20 @@ padding-left: 30px;
 .intro section {
   float: right;
   padding-right: 8px;
+  word-spacing: 2pt;
 }
 
 .so-far {
   padding-top: 10px;
   align-items: center;
+  font-size: 13.5px;
+}
+
+.primerafila span {
+  font-weight: bold;
+  background-color: rosybrown;
+  text-align: center;
+  padding-top: 20px;
 }
 
 .second {
@@ -299,6 +310,20 @@ padding-left: 30px;
 
 .footer button {
   padding: 10px;
+  font-weight: bold;
+  color: rgb(54, 25, 133);
+}
+
+.footer .violeta {
+  background-color: rgb(54, 25, 133);
+  color: white;
+}
+
+.gris {
+  font-size: 15.2px;
+  padding: 12px;
+  background-color: thistle;
+  margin-right: 40px;
 }
 
 /*El footer con los links y redes sociales*/
