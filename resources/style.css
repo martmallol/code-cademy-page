@@ -83,9 +83,8 @@ body {
   margin: auto;
   margin-top: 50px;
   width: 1260px;
-  height: 1400px;
+  height: 1440px;
   background-color: red;
-
 }
 
 /*El recuadro de My Goal*/
@@ -215,7 +214,7 @@ padding-left: 30px;
 /*El recuadro de My Courses*/
 .front {
   width: 840px;
-  height: 1200px;
+  height: 1250px;
   background-color: yellow;
   /*margin-top: 100px;
   padding-left: 200px;
@@ -223,7 +222,7 @@ padding-left: 30px;
 
 }
 
-.interactive, .careerpath, .course {
+.interactive, .careerpath, .javascriptcourse {
   margin-bottom: 20px;
   padding-bottom: 60px;
   background-color: white;
@@ -287,6 +286,7 @@ padding-left: 30px;
 }
 
 .so-far {
+  color: #000000;
   padding-top: 10px;
   align-items: center;
   font-size: 13.5px;
@@ -326,6 +326,50 @@ padding-left: 30px;
   margin-right: 40px;
 }
 
+.skill, .course {
+  border:1px solid black;
+  background: #ffffff;
+  padding-top:18px;
+  padding-left: 12px;
+  width: 405px;
+  height: 160px
+}
+
+.course {
+  float: right;
+}
+
+.headerbox {
+  padding-bottom: 10px;
+}
+
+.bodybox {
+  margin-bottom: 48px;
+}
+
+.bodybox span {
+  font-size: 14px;
+}
+
+.footerbox {
+  float: right;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.footerbox {
+  padding: 4px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.skill .footerbox {
+  background-color: rgb(206, 248, 225);
+}
+
+.course .footerbox {
+  background-color: rgb(222, 239, 248);
+}
 /*El footer con los links y redes sociales*/
 footer {
   margin: auto;
