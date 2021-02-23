@@ -370,11 +370,63 @@ padding-left: 30px;
 .course .footerbox {
   background-color: rgb(222, 239, 248);
 }
+
 /*El footer con los links y redes sociales*/
 footer {
-  margin: auto;
-  margin-top: 50px;
-  width: 1520px;
-  height: 800px;
+  border-top: 1px solid black;
+  padding-top: 20px;
+
+
+  height: 500px;
   background-color: lightblue;
+}
+
+.infor, .derechos{
+  margin: auto;
+  width: 1450px;
+  background-color: greenyellow;
+}
+
+.izqu, .der {
+  width: 720px;
+  height: 350px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: 120px;
+}
+
+.izqu {
+  background-color: darkorange;
+
+}
+
+.der {
+  background-color: deeppink;
+  float: right;
+}
+
+.company, .mobile, .resources, .community, 
+.individual-plans, .enterprise-plans, .support {
+  background-color: gold;
+  padding-left: 5px;
+}
+
+.mobile {
+  padding-top: 40px;
+  height: 200px;
+  align-items: baseline;
+}
+
+.support {
+  margin-bottom: 50px;
+}
+
+.lista {
+  margin-bottom: 12px;
+}
+
+.izqu li {
+  padding-bottom: 4px;
+  list-style: none;
 }
