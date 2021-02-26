@@ -23,29 +23,16 @@ nav {
   border-bottom: 1px solid black;
 }
 
-/*.logo {
-  color: rgb(226, 226, 226);
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font-size: 20px;
-}*/
-/*.navizq {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 30%;
-  height: 100%;
-  z-index: 1;
-}*/
-
 .nav-links {
   display: flex;
   justify-content: space-around;
   width: 30%;
 }
 
-.nav-links li {
+.nav-links li, .nav-imgs li {
   list-style: none;
+  position: relative;
+	display: inline-block;
 }
 
 .nav-links a {
@@ -53,6 +40,7 @@ nav {
   text-decoration: none;
   letter-spacing: 1px;
   font-size: 14px;
+  font-weight: 520;
 }
 
 .nav-imgs {
@@ -61,11 +49,21 @@ nav {
   /*background-color: red;*/
 }
 
+.nav-imgs li {
+  display: flex;
+  text-decoration: none;
+  padding-right: 10px;
+  /*background-color: red;*/
+}
+
 .nav-imgs button {
-  margin-top: 5px;
-  padding: 12px;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding: 10px;
   margin-left: 8px;
-  background-color: rgb(73, 15, 209);
+  background-color: #3a10e5;
   color: #ffffff;
 }
 
@@ -73,8 +71,49 @@ nav {
   margin-top: 10px;
 }
 
+.nav-links li a:hover{ /*para que al poner el mouse arriba se ponga de colorcito*/
+	color: #3a10e5;
+	transition: all .3s;
+}
+
+.nav-links > li > a{
+	padding: 5px;
+}
+
+/* Submenu que se despliega*/
+
+.submenu {
+  border:1px solid black;
+	position: absolute;
+	background: #ffffff;
+  padding: 10px;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.submenu li a {
+	display: block;
+	padding: 10px;
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+}
+
+.nav-imgs .submenu {
+  margin-top: 55px;
+  width: 250px;
+}
+
+.nav-links li:hover .submenu, .nav-imgs li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+
+
+/*-----------------------------------------------------------------*/
+
 body {
-  background-color: #FCE7CC;
+  background-color: #fff0e5;
   font-family: sans-serif;
 }
 
@@ -268,7 +307,7 @@ padding-left: 30px;
 }
 
 .intro {
-  background-color: rgb(226, 231, 235);
+  background-color: #f6f5fa;
   margin-right: 40px;
   padding: 15px;
 }
@@ -310,18 +349,18 @@ padding-left: 30px;
 .footer button {
   padding: 10px;
   font-weight: bold;
-  color: rgb(54, 25, 133);
+  color: #3a10e5;
 }
 
 .footer .violeta {
-  background-color: rgb(54, 25, 133);
+  background-color: #3a10e5;
   color: white;
 }
 
 .gris {
   font-size: 15.2px;
   padding: 12px;
-  background-color: thistle;
+  background-color: #f6f5fa;
   margin-right: 40px;
 }
 
@@ -363,11 +402,11 @@ padding-left: 30px;
 }
 
 .skill .footerbox {
-  background-color: rgb(206, 248, 225);
+  background-color: #f5ffe3;
 }
 
 .course .footerbox {
-  background-color: rgb(222, 239, 248);
+  background-color: #f5fcff;
 }
 
 /*El footer con los links y redes sociales*/
