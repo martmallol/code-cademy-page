@@ -56,22 +56,27 @@ nav {
   /*background-color: red;*/
 }
 
-.nav-imgs button {
+.button {
+  color: #ffffff !important;
   font-weight: bold;
   font-size: 15px;
+  padding: 10px;
+  background-color: #3a10e5;
+  
+}
+
+.nav-imgs .button {
+  margin-top: 250px;
   margin-top: 8px;
   margin-bottom: 8px;
-  padding: 10px;
-  margin-left: 8px;
-  background-color: #3a10e5;
-  color: #ffffff;
+  margin-left: 4px;
 }
 
 .nav-imgs .logo {
   margin-top: 10px;
 }
 
-.nav-links li a:hover{ /*para que al poner el mouse arriba se ponga de colorcito*/
+.nav-links li a:hover, .nav-imgs .submenu li a:hover , footer a:hover{ /*para que al poner el mouse arriba se ponga de colorcito*/
 	color: #3a10e5;
 	transition: all .3s;
 }
@@ -101,7 +106,7 @@ nav {
 
 .nav-imgs .submenu {
   margin-top: 55px;
-  width: 250px;
+  width: 320px;
 }
 
 .nav-links li:hover .submenu, .nav-imgs li:hover .submenu{
@@ -109,12 +114,27 @@ nav {
 	opacity: 1;
 }
 
+.marquito {
+  margin-top: 28px;
+  margin-bottom: 28px;
+  margin-left: 60px;
+  width: 175px;
+  margin-right: 50px;
+  border:3px solid black;
+  padding: 8px;
+  text-align: center;
+  }
+
 
 /*-----------------------------------------------------------------*/
 
 body {
   background-color: #fff0e5;
   font-family: sans-serif;
+}
+
+a {
+  color: #000000;
 }
 
 /*Maqueta gral*/
@@ -135,6 +155,11 @@ body {
   /*background-color: green;*/
 }
 
+/*Area del titulo del banner*/
+.titulobis {
+  padding-bottom: 20px;
+}
+
 .titulo {
   font-size: 26px;
   font-weight: bold;
@@ -143,8 +168,14 @@ body {
 }
 
 .edit {
-  padding: 5px;
+  padding: 8px;
+  margin-left: 5px;
   font-weight: bold;
+  color:#3a10e5;
+}
+
+.edit:hover {
+  background-color: #f6f5fa;
 }
 
 .week-title {
@@ -180,7 +211,6 @@ body {
   align-items: left;
   text-align: center;
   padding-bottom: 25px;
-  
 }
 
 .monday, .tuesday, .thursday, .friday, .saturday, .sunday {
@@ -267,6 +297,10 @@ padding-left: 30px;
   background-color: white;
 }
 
+.careerpath .body a:hover {
+  text-decoration: underline;
+}
+
 .text {
   padding-left: 30px;
   /*background-color: turquoise;*/
@@ -310,6 +344,10 @@ padding-left: 30px;
   background-color: #f6f5fa;
   margin-right: 40px;
   padding: 15px;
+}
+
+.intro a {
+  color: #3a10e5;
 }
 
 .intro .introduction {
@@ -417,6 +455,8 @@ footer {
   /*background-color: lightblue;*/
 }
 
+
+
 .infor, .derechos{
   margin: auto;
   width: 1450px;
@@ -501,11 +541,7 @@ footer {
 .privacy, .love {
   font-size: 13.5px;
 }
+
 .love {
   float: right;
 }
-
-
-
-
-
