@@ -62,7 +62,27 @@ nav {
   font-size: 15px;
   padding: 10px;
   background-color: #3a10e5;
-  
+  border: 0.1em solid #3a10e5;
+}
+
+.button:hover {
+  opacity: 0.8;
+  transition: opacity 0.15s;
+}
+
+.buttonbis {
+  color: #3a10e5;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 10px;
+  margin-right: 20px;
+  border: 0.1em solid #ffffff;
+}
+
+.buttonbis:hover {
+  background-color: #f6f5fa;
+  border: 0.1em solid #f6f5fa;
+  transition: 0.15s;
 }
 
 .nav-imgs .button {
@@ -109,7 +129,7 @@ nav {
   width: 320px;
 }
 
-.nav-links li:hover .submenu, .nav-imgs li:hover .submenu{
+.nav-links li:hover .submenu, .nav-imgs li:hover .submenu {
 	visibility: visible;
 	opacity: 1;
 }
@@ -308,11 +328,16 @@ padding-left: 30px;
 }
 
 .header {
+  padding-top: 25px;
   width: 840px;
   height: 70px;
   background-color: white;
   display: flex;
   align-items: center;
+}
+
+.header h2 {
+  margin-top: 5px;
 }
 
 .header span {
@@ -390,10 +415,6 @@ padding-left: 30px;
   color: #3a10e5;
 }
 
-.footer .violeta {
-  background-color: #3a10e5;
-  color: white;
-}
 
 .gris {
   font-size: 15.2px;
@@ -502,6 +523,10 @@ footer {
   padding-top: 40px;
   height: 200px;
   align-items: baseline;
+}
+
+.mobile a:hover { 
+  opacity: 0.6;
 }
 
 .support {
