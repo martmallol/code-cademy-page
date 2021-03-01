@@ -63,6 +63,7 @@ nav {
   padding: 10px;
   background-color: #3a10e5;
   border: 0.1em solid #3a10e5;
+  border-radius: 4px;
 }
 
 .button:hover {
@@ -77,6 +78,7 @@ nav {
   padding: 10px;
   margin-right: 20px;
   border: 0.1em solid #ffffff;
+  border-radius: 4px;
 }
 
 .buttonbis:hover {
@@ -114,7 +116,6 @@ nav {
   padding: 10px;
 	visibility: hidden;
 	opacity: 0;
-	transition: opacity 1.5s;
 }
 
 .submenu li a {
@@ -127,6 +128,10 @@ nav {
 .nav-imgs .submenu {
   margin-top: 55px;
   width: 320px;
+}
+
+.mart {
+  padding-left: 5px;
 }
 
 .nav-links li:hover .submenu, .nav-imgs li:hover .submenu {
@@ -168,13 +173,15 @@ a {
 
 /*El recuadro de My Goal*/
 .banner {
-  padding-top: 60px;
   float: right;
   width: 350px;
-  height: 500px;
+  height: 700px;
   /*background-color: green;*/
 }
-
+.sticky {
+  width: 350px;
+  padding-top: 60px;
+}
 /*Area del titulo del banner*/
 .titulobis {
   padding-bottom: 20px;
@@ -192,6 +199,7 @@ a {
   margin-left: 5px;
   font-weight: bold;
   color:#3a10e5;
+  border-radius: 4px;
 }
 
 .edit:hover {

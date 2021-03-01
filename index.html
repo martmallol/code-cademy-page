@@ -6,6 +6,7 @@
     <title>Dashboard | Codecademy</title>
     <link rel="stylesheet" href="./resources/style.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Psoppins%26display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
 </head>
 
     <!--Aca va la navbar-->
@@ -18,16 +19,16 @@
       <ul class="nav-links">
         <li><a href="#">My Home</a></li>
         <li><a href="https://www.codecademy.com/catalog">Catalog</a></li>
-        <li>
-          <a href="#">Resources</a>
+        <li class="click">
+          <a href="#">Resources <i class="fas fa-caret-down"></i></a>
           <ul class="submenu">
             <li><a href="https://www.codecademy.com/resources/cheatsheets/all">Cheatsheets</a></li>
             <li><a href="https://www.codecademy.com/articles">Articles</a></li>
             <li><a href="https://news.codecademy.com/">Blog</a></li>
           </ul>
         </li>
-        <li>
-          <a href="#">Community</a>
+        <li class="click">
+          <a href="#">Community <i class="fas fa-caret-down"></i></a>
           <ul class="submenu">
             <li><a href="https://discuss.codecademy.com/">Forums</a></li>
             <li><a href="https://discord.com/invite/codecademy">Chat</a></li>
@@ -35,8 +36,8 @@
             <li><a href="https://www.codecademy.com/events">Events</a></li>
           </ul>
         </li>
-        <li>
-          <a href="#">Pro Pricing</a>
+        <li class="click">
+          <a href="#">Pro Pricing <i class="fas fa-caret-down"></i></a>
           <ul class="submenu">
             <li><a href="https://www.codecademy.com/pricing">For Individuals</a></li>
             <li><a href="https://www.codecademy.com/student-center">For Students</a></li>
@@ -58,10 +59,26 @@
         <li>
           <a href="#"><img src="./resources/images/user.png" alt="user" height="52" width="52"/></a>
           <ul class="submenu">
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Account + Billing</a></li>
-            <li><a href="#">My Home</a></li>
-            <li><a href="#">Help Center</a></li>
+            <li>
+              <a href="#">
+                <i class="far fa-user"></i>
+                <span class="mart">Profile</span>
+              </a></li>
+            <li>
+              <a href="#">
+                <i class="fas fa-sliders-h"></i>
+                <span class="mart">Account + Billing</span>
+              </a></li>
+            <li>
+              <a href="#">
+                <i class="fas fa-home"></i>
+                <span class="mart">My Home</span>
+              </a></li>
+            <li>
+              <a href="#">
+                <i class="far fa-question-circle"></i>
+                <span class="mart">Help Center</span>
+              </a></li>
             <li><a href="#">Log Out</a></li>
           </ul>
         </li> 
@@ -74,51 +91,54 @@
 
 <body>
     <div class="general">
-            <!--Aca va la columna de la derecha con la data del usuario y cuantos dias laburo-->
-      <div class="banner">
-        <div class="titulobis"> 
-          <span class="titulo">My Goal</span>
-          <a href="#"><span class="edit">Edit</span></a>
-        </div>
-        <div class="week-title">
-          <p>Learn 3 days per week</p>
-        </div>
-        <div class="targetbox">
-          <div class="dias-completados"> <!--Aca el boton con los dias completados-->
-              <p>THIS WEEK</p>
-              <span class="zero">0</span>
-              <span>of 3 days</span>
-              <div class="semana"> <!--Aca va a estar el boton con la semana-->
-                <div class="monday">
-                  <span>M</span>
-                </div>
-                <div class="tuesday">
-                  <span>T</span>
-                </div>
-                <div class="wednesday">
-                  <span>W</span>
-                </div>
-                <div class="thursday">
-                  <span>T</span>
-                </div>
-                <div class="friday">
-                  <span>F</span>
-                </div>
-                <div class="saturday">
-                  <span>S</span>
-                </div>
-                <div class="sunday">
-                  <span>S</span>
-                </div>
-              </div> 
+      <!--Aca va la columna de la derecha con la data del usuario y cuantos dias laburo-->
+      <div class="banner"> 
+        <div class="sticky"> <!--Capa flotante para que se mueva cuando scrolleo-->
+          <div class="titulobis"> 
+            <span class="titulo">My Goal</span>
+            <a href="#"><span class="edit">Edit</span></a>
           </div>
-          <div class="semanas-completadas"> <!--Aca abajo con las semanas seguidas-->
-              <p>TARGET MET</p>
-              <span class="zero">0</span>
-              <span>weeks in a row</span>
+          <div class="week-title">
+            <p>Learn 3 days per week</p>
+          </div>
+          <div class="targetbox">
+            <div class="dias-completados"> <!--Aca el boton con los dias completados-->
+                <p>THIS WEEK</p>
+                <span class="zero">0</span>
+                <span>of 3 days</span>
+                <div class="semana"> <!--Aca va a estar el boton con la semana-->
+                  <div class="monday">
+                    <span>M</span>
+                  </div>
+                  <div class="tuesday">
+                    <span>T</span>
+                  </div>
+                  <div class="wednesday">
+                    <span>W</span>
+                  </div>
+                  <div class="thursday">
+                    <span>T</span>
+                  </div>
+                  <div class="friday">
+                    <span>F</span>
+                  </div>
+                  <div class="saturday">
+                    <span>S</span>
+                  </div>
+                  <div class="sunday">
+                    <span>S</span>
+                  </div>
+                </div> 
+            </div>
+            <div class="semanas-completadas"> <!--Aca abajo con las semanas seguidas-->
+                <p>TARGET MET</p>
+                <span class="zero">0</span>
+                <span>weeks in a row</span>
+            </div>
           </div>
         </div>
       </div>
+      
       
       <!--Recuadro de Codecademy PRO-->
       <div class="Pro"> 
