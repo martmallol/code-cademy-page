@@ -1,11 +1,11 @@
 /*Que los enlaces no esten subrayados*/
 a:link, a:visited, a:active {
-  text-decoration:none;
+  text-decoration:none; /*que ningun link tenga decoracion (subrayado x ej)*/
 }
 
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0; /*que nada tenga margen en el archivo si no se especifica*/
+  padding: 0; /*que nada tenga padding en el archivo si no se especifica*/
   box-sizing: border-box;
 }
 
@@ -108,7 +108,6 @@ nav {
 }
 
 /* Submenu que se despliega*/
-
 .submenu {
   border:1px solid black;
 	position: absolute;
@@ -159,21 +158,23 @@ body {
 }
 
 a {
-  color: #000000;
+  color: #000000; /*que todos los links de la pag sean de color negro*/
 }
 
 /*Maqueta gral*/
 .general {
-  margin: auto;
+  margin: auto; /*que el archivo tenga un margen centrado automatico*/
   margin-top: 50px;
   width: 1260px;
   height: 1440px;
   /*background-color: red;*/
 }
 
+/*-----------------------------------------------------------------*/
+
 /*El recuadro de My Goal*/
 .banner {
-  float: right;
+  float: right; /*que este a la derecha, que sea una columna*/
   width: 350px;
   height: 700px;
   /*background-color: green;*/
@@ -199,11 +200,11 @@ a {
   margin-left: 5px;
   font-weight: bold;
   color:#3a10e5;
-  border-radius: 4px;
+  border-radius: 4px; /*que su fondo tenga bordes redondeados*/
 }
 
 .edit:hover {
-  background-color: #f6f5fa;
+  background-color: #f6f5fa; /*cuando paso el mouse se activa el fondo*/
 }
 
 .week-title {
@@ -234,23 +235,21 @@ a {
 }
 
 .semana {
-  display: flex;
-  justify-content: space-around;
-  align-items: left;
-  text-align: center;
+  display: flex; /*que esten esparcidos horizontalmente*/
+  justify-content: space-around; /*que acaparen todo el ancho de su contenedor*/
   padding-bottom: 25px;
 }
 
 .monday, .tuesday, .thursday, .friday, .saturday, .sunday {
   background-image: url(./images/rombo.png);
-  background-size: cover;
+  background-size: cover; /*que cubra al texto*/
   padding: 12px;
   padding-bottom: 2px;
 }
 
 .wednesday {
   background-image: url(./images/rombo\ punteado.png);
-  background-size: cover;
+  background-size: cover; /*que cubra al texto*/
   padding: 11px;
 }
 
@@ -261,36 +260,29 @@ a {
   padding-bottom: 25px;
 }
 
+/*-----------------------------------------------------------------*/
 
 /*El recuadro de Get more from Codecademy*/
 .Pro {
-  padding-top: 60px;
+  padding-top: 60px; /*lo separo del tope de la pagina*/
   width: 840px;
   height: 189px;
   /*background-color: blue;*/
-  align-items: center;
-  /*margin-top: 100px;
-  padding-left: 200px;
-  padding-top: 20px;*/
-
 }
 
-.marco {
-border:1px solid black;
+.marco { /*Marco que recubre toda la seccion*/
+border: 1px solid black; /*borde del marco blanco*/
 background: #ffffff;
-padding:10px;
+padding: 10px;
 padding-left: 30px;
 }
 
-.cajapro {
+.cajapro { /*caja negra que recubre el logo de "pro"*/
   font-size: 14px;
   font-weight: 520;
   color: #ffffff;
   background: #000000;
-  margin: 0 0 25px;
-  overflow: hidden;
   padding: 3px;
-  
   }
 
 .titulopro {
@@ -299,7 +291,6 @@ padding-left: 30px;
   font-weight: bold;
   padding: 5px;
   color: #000000;
-
 }
 
 .parrafopro {
@@ -308,15 +299,13 @@ padding-left: 30px;
   font-size: 14px;
 }
 
+/*-----------------------------------------------------------------*/
+
 /*El recuadro de My Courses*/
 .front {
   width: 840px;
   height: 1250px;
   /*background-color: yellow;*/
-  /*margin-top: 100px;
-  padding-left: 200px;
-  padding-top: 20px;*/
-
 }
 
 .interactive, .careerpath, .javascriptcourse {
@@ -325,8 +314,8 @@ padding-left: 30px;
   background-color: white;
 }
 
-.careerpath .body a:hover {
-  text-decoration: underline;
+.careerpath .body a:hover { /*cuando paso el mouse*/
+  text-decoration: underline; /*se subrayan los links*/
 }
 
 .text {
@@ -341,7 +330,7 @@ padding-left: 30px;
   height: 70px;
   background-color: white;
   display: flex;
-  align-items: center;
+  align-items: center; /*a la misma altura y centrados*/
 }
 
 .header h2 {
@@ -388,7 +377,7 @@ padding-left: 30px;
   padding-left: 8px;
 }
 
-.intro section {
+.intro section { /*cheatsheet y practice pack*/
   float: right;
   padding-right: 8px;
   word-spacing: 2pt;
@@ -431,6 +420,9 @@ padding-left: 30px;
   margin-right: 40px;
 }
 
+/*-----------------------------------------------------------------*/
+
+/*La seccion "Recommended For You"*/
 .skill, .course {
   border:1px solid black;
   background: #ffffff;
@@ -476,34 +468,34 @@ padding-left: 30px;
   background-color: #f5fcff;
 }
 
+/*-----------------------------------------------------------------*/
+
 /*El footer con los links y redes sociales*/
 footer {
-  border-top: 1px solid black;
+  border-top: 1px solid black; /*borde de arriba*/
   padding-top: 20px;
   height: 400px;
   /*background-color: lightblue;*/
 }
 
-
-
 .infor, .derechos{
-  margin: auto;
+  margin: auto; /*margen para que esten centrados en el medio como el resto del archivo*/
   width: 1450px;
   /*background-color: greenyellow;*/
 }
 
-.izqu, .der {
+.izqu, .der { /*boxs izquierdo y derecho*/
   width: 725px;
   height: 310px;
   margin-bottom: 20px;
 }
 
-.izqu , .gridder {
+.izqu , .gridder { /*informacion de los boxs*/
   /*background-color: darkorange;*/
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: 120px;
+  display: grid; /*que los elementos esten en forma de tabla*/
+  grid-template-columns: repeat(3, 1fr); /*que tengan 3 columnas*/
+  grid-gap: 10px; /*ancho de los espacios entre columnas*/
+  grid-auto-rows: 120px; /*ancho del area*/
 }
 
 .izqu {
@@ -533,8 +525,8 @@ footer {
   align-items: baseline;
 }
 
-.mobile a:hover { 
-  opacity: 0.6;
+.mobile a:hover {  
+  opacity: 0.6; /*cuando pones el mouse se vuelve mas clarito*/
 }
 
 .support {
@@ -547,12 +539,12 @@ footer {
 
 .infor li {
   padding-bottom: 5px;
-  list-style: none;
+  list-style: none; /*que los elementos no tengan el puntito de las listas*/
 }
 
-.subjects, .languagesuno, .languagesdos{
-  /*background-color: khaki;*/
-}
+/*.subjects, .languagesuno, .languagesdos{
+  background-color: khaki;
+} */
 
 .gridder h4 {
   padding-bottom: 10px;
@@ -567,7 +559,7 @@ footer {
 }
 
 .derechos {
-  border-top:1px solid black;
+  border-top:1px solid black; /*borde que separa los links de los derechos*/
   padding-top: 12px;
 }
 
