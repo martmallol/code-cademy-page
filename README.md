@@ -1,4 +1,2 @@
-# code-cademy-page
-Este proyecto es mi segundo intento de hacer una pag web. Para ello estoy haciendo desde cero la pagina principal de Codecademy. 
-Es basicamente lo mismo, solo que la hice intentando que todo el codigo, tanto html como css, no sea copiado del codigo base de CodeCademy. 
-Osea que la idea es hacerlo a mi estilo, como pueda.
+# Codecademy Home Page Clone
+This project is my second web page attempt. I rebuilt the Codecademy Home page. It's basically a clone, and every piece of code was created by me. No line from the Codecademy's base code was copied in the process. The idea was to make the front page with my own style of coding.
